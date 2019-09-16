@@ -1,4 +1,6 @@
 # Login_page
+#color_code: #A625D3 (purple), #000000 (black), #ffffff (white)
+
 
 
 Front End | Back End | Design - Task 1
