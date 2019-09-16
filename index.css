@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    background-color: rgb(242, 242, 242)
+}
+
+hr {
+    background-color: white;
+}
+
+#dashboard-design {
+    border:2px solid white;
+    border-radius: 15px;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(255, 219, 153);
+    margin-top: 150px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-left: 400px
+}
+
+.dashboard {
+    text-align: center
+}
+
+.dashboard h2 {
+    /* text-decoration: underline; */
+    color: white;
+    font-style: italic;
+    margin-top: 25px
+}
+
+.dashboard hr {
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 5px;
+    border: 1px solid white;
+}
+
+.dashboard p {
+    margin-top: 20px;
+}
