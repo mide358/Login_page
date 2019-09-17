@@ -1,9 +1,9 @@
 body{
 /* background-image is inputed and here*/
-background-image: url("https://res.cloudinary.com/mide358/image/upload/v1568667115/image3_hxlree.png");
+background-image: url("https://res.cloudinary.com/mide358/image/upload/v1568715997/Background-img2_hc8lnn.png");
 background-repeat: no-repeat;
-background-position: top right;
-height: auto;
+background-position: top ;
+background-size: cover;
 
 
 }
@@ -37,6 +37,7 @@ input {
     padding-top: 10px;
     padding-bottom: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 a {
@@ -67,3 +68,4 @@ img {
 .other-details {
     text-align: center;
 }
+
