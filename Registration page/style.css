@@ -5,10 +5,10 @@ body{
 	background-position: top;
 }
 .col-sm-6 h4{
-	font-size:  35px;
+	font-size:  25px;
 }
 .col-sm-6 h5{
-	font-size: 20px;
+	font-size: 15px;
 }
 .col-sm-6 h4, h5{
 	text-align: center;
@@ -41,7 +41,7 @@ body{
 	width: 400px;
 	border: none;
 	font-weight: 600;
-	color: #000;
+	color: #fff;
 	padding: 5px;
 	display: block;
 	margin:  30px 50px 10px;
@@ -74,5 +74,5 @@ body{
 	}
 	
 	#other a:hover {
-		background: #B141D8;
+		color: #B141D8;
 	}
