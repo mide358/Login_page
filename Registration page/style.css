@@ -20,7 +20,7 @@ body{
 	padding: 30px;
 }
 .logo{
-	margin-left: 150px;
+	margin-left: 2vw;
 	padding-top: 20px;
 	color: #A625D3;
 	font-weight: bold;
@@ -38,23 +38,22 @@ body{
 .form-group .btn-default{
 	border-radius: 2em;
 	background:#A625D3 ;
-	width: 400px;
+	width: 25vw;
 	border: none;
 	font-weight: 600;
 	color: #fff;
 	padding: 5px;
 	display: block;
-	margin:  30px 50px 10px;
-	font-size: 20px;
+	margin:  30px auto 10px auto;
 
 }
 .form-group .btn-default:hover{
-	background: #B141D8
+	box-shadow: 0 8px 6px -6px black;
+	color: rgb(199, 199, 199);
 }
 .col-sm-6 p{
-	margin-left: 50px;
 	font-size: 12px;
-
+	margin: 0 auto;
 }
 .col-sm-6 p a{
 	color: #A625D3;
@@ -62,17 +61,36 @@ body{
 }
 #other {
 	text-align: center;
+	margin: 0 auto;
+}
+
+#other p{
+	text-align: center;
+	margin: 0 auto;
 }
 
 #other a {
-    display: inline-block;
-    margin-right: 40px;
-    margin-left: 70px;
-    margin-top: 20px;
-    color: black;
+	margin-top: 20px;
+	margin-left: 4px;
+    color: #B141D8;
 	text-decoration: none;
 	}
 	
-	#other a:hover {
-		color: #B141D8;
+
+	@media (min-width: 769px) {
+		#other p{
+			margin-left: 7vw;
+		}
+	}
+
+	@media (min-width: 788px) {
+		#other p{
+			margin-right: 5vw;
+		}
+	}
+
+	@media (min-width: 999px) {
+		#other p{
+			margin-right: -5vw;
+		}
 	}
