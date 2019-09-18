@@ -1,12 +1,14 @@
 body{
-	background: url(Background-img2.png);
+	background: url("https://res.cloudinary.com/mide358/image/upload/v1568715997/Background-img2_hc8lnn.png");
+	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: top;
 }
 .col-sm-6 h4{
-	font-size:  20px;
+	font-size:  35px;
 }
 .col-sm-6 h5{
-	font-size: 10px;
+	font-size: 20px;
 }
 .col-sm-6 h4, h5{
 	text-align: center;
@@ -43,6 +45,7 @@ body{
 	padding: 5px;
 	display: block;
 	margin:  30px 50px 10px;
+	font-size: 20px;
 
 }
 .form-group .btn-default:hover{
@@ -57,4 +60,19 @@ body{
 	color: #A625D3;
 	font-weight: bold;
 }
+#other {
+	text-align: center;
+}
 
+#other a {
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 70px;
+    margin-top: 20px;
+    color: black;
+	text-decoration: none;
+	}
+	
+	#other a:hover {
+		background: #B141D8;
+	}

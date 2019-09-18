@@ -21,39 +21,43 @@
         <div class="col-sm-6">
           <h4>Thank you for registering </h4>
           <h5>Who will run this account?</h5>
+         
           <div class=" register-form">
-            <form class="form-group">
+           
+            <form  id="myForm" class="form-group" method="POST" action="">
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" name="Fname" class="form-control" placeholder="First name">
+                  <input type="text" id="firstName" name="fName" class="form-control" placeholder="First name" minlength="4" pattern="[A-Za-z]+" required>
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" name="Lname" class="form-control" placeholder="Last name">
+                  <input type="text" id="lastName" name="lName" class="form-control" placeholder="Last name" minlength="4" pattern="[A-Za-z]+" required>
                 </div>
                 
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="text" name="email" class="form-control" placeholder="Email">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 </div>
                 <div class="col-sm-6">
-                  <input type="text" name="phone-contact" class="form-control" placeholder="Phone">
+                  <input type="tel" name="phone-contact" class="form-control" placeholder="Phone" pattern="^\d{11}$" 
+                  title="Please fill in correct phone number" required>
                 </div>
                 
               </div>
-              <input type="password" name="password" class="form-control" placeholder="Create Password">
-              <input type="password" name="password" class="form-control" placeholder="Verify Password">
-              <button type="submit" class="btn btn-default"> Submit</button>
+              <input type="password" id="createPassword" name="password" class="form-control" placeholder="Create Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+              title="Must be at least 8 characters and contain at least one number, one uppercase and one lowercase letter" 
+              required>
+              
+              <input type="password" id="verifyPassword" name="password2" class="form-control" placeholder="Verify Password" 
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="please enter same password as above" onchange="checkPassword();" required>
+              
+              <button class="btn btn-default" value="submit" id="submit" onchange="checkPassword();" >Register</button>
               <div class="row">
-                <div class="col-sm-6">
-                  <p> Have an account already?</p>
+                <div id="other">
+                    <a href=" ">Have an account already?</a>   <a href= " ">Login instead </a> 
                   
-                </div>
-                <div class="col-sm-6">
-                <p><a href="Login-page">Login</a> instead</p>
-                </div>
-
-
             </form>
               
           
@@ -61,10 +65,12 @@
         <div class="col-sm-3"></div>
       </div>
     </div>
-    
 
+   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="registration.js"></script>
   </body>
 </html>
